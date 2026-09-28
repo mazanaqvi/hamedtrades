@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import { ConsentNotice } from "./ConsentNotice.jsx";
 
 export function Terms() {
   return (
     <article className="wrap prose">
+      <ConsentNotice />
       <p className="kicker">Legal</p>
       <h1>Terms of Service</h1>
       <p className="updated">Last updated 28 September 2026</p>
