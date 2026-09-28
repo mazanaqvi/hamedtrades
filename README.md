@@ -30,14 +30,12 @@ Both URLs have to load without a login.
 
 ## Deploy
 
-```bash
-npm run build
-```
+Pushes to `main` build the React app and publish `dist` with GitHub Actions. The site is served from `/hamedtrades/`, so asset URLs and routes include that path.
 
-Publish the `dist` folder.
+- **Privacy Policy URL:** `https://mazanaqvi.github.io/hamedtrades/privacy`
+- **Terms of Service URL:** `https://mazanaqvi.github.io/hamedtrades/terms`
 
-- **Cloudflare Pages:** build command `npm run build`, output directory `dist`. `public/_redirects` keeps `/terms` and `/privacy` working.
-- **GitHub Pages:** the build also copies `index.html` to `404.html` so those routes still open.
+Cloudflare Pages can still use build command `npm run build` and output directory `dist`. Leave `VITE_BASE` unset there so the site is served from `/`.
 
 ## Before you rely on it
 

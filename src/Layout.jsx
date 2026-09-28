@@ -24,7 +24,7 @@ export function Layout({ children }) {
       </a>
       <header className="top">
         <Link className="mark" to="/">
-          <img src="/hamed_trades.png" alt="" width="40" height="40" />
+          <img src={`${import.meta.env.BASE_URL}hamed_trades.png`} alt="" width="40" height="40" />
           <span>Hamed Trades</span>
         </Link>
         <nav className="nav" aria-label="Primary">

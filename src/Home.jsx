@@ -38,7 +38,7 @@ export function Home() {
         </div>
         <figure className="brand">
           <img
-            src="/hamed_trades.png"
+            src={`${import.meta.env.BASE_URL}hamed_trades.png`}
             width="1192"
             height="1194"
             alt="Hamed Trades logo: a green bull, the word Hamed, the Statue of Liberty, and a blue city skyline."
